@@ -1,0 +1,10 @@
+baboon.png: 0.438485
+barbara.png: 0.415980
+bridge.png: 0.454853
+coastguard.png: 0.459896
+face.png: 0.277433
+foreman.png: 0.149187
+lenna.png: 0.263984
+man.png: 0.319509
+monarch.png: 0.239901
+pepper.png: 0.227899

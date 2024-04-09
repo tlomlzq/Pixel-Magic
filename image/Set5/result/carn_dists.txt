@@ -1,0 +1,5 @@
+baby.png: 0.242986
+bird.png: 0.064535
+butterfly.png: 0.116263
+head.png: 0.322299
+woman.png: 0.140321

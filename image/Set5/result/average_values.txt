@@ -1,0 +1,6 @@
+carn: average 0.17728080000000002
+edsr: average 0.173654
+hat: average 0.18107
+rrdbnet: average 0.1691982
+san: average 0.1712346
+swinIR.txt: average 0.16367779999999998

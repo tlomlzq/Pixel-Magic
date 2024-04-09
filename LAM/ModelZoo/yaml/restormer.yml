@@ -1,0 +1,129 @@
+datasets:
+  train:
+    batch_size_per_gpu: 1
+    dataroot_gt: ./Super_resolution/Datasets/DIV2K/DIV2K_train_HR
+    dataroot_lq: none
+    dataset_enlarge_ratio: 1
+    filename_tmpl: '{}'
+    geometric_augs: true
+    gt_size: 384
+    gt_sizes:
+    - 120
+    - 144
+    - 192
+    - 240
+    - 312
+    - 384
+    in_ch: 3
+    io_backend:
+      type: disk
+    iters:
+    - 92000
+    - 64000
+    - 48000
+    - 36000
+    - 36000
+    - 24000
+    mini_batch_sizes:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    name: TrainSet
+    num_worker_per_gpu: 8
+    prefetch_mode: null
+    sr_scale: 2
+    type: Dataset_Classical_SR
+    use_shuffle: true
+  val:
+    dataroot_gt: ./Super_resolution/Datasets/Set5/HR
+    dataroot_lq: none
+    in_ch: 3
+    io_backend:
+      type: disk
+    name: ValSet
+    sr_scale: 2
+    type: Dataset_Classical_SR
+dist_params:
+  backend: nccl
+  port: 29500
+logger:
+  print_freq: 1000
+  save_checkpoint_freq: 4000.0
+  use_tb_logger: true
+  wandb:
+    project: null
+    resume_id: null
+manual_seed: 100
+model_type: ImageCleanModel
+name: Classical_SR_Restormer
+network_g:
+  LayerNorm_type: BiasFree
+  bias: false
+  dim: 48
+  dual_pixel_task: false
+  ffn_expansion_factor: 2.66
+  heads:
+  - 1
+  - 2
+  - 4
+  - 8
+  inp_channels: 3
+  num_blocks:
+  - 4
+  - 6
+  - 6
+  - 8
+  num_refinement_blocks: 4
+  out_channels: 3
+  type: Restormer
+num_gpu: 1
+path:
+  pretrain_network_g: null
+  resume_state: null
+  strict_load_g: true
+scale: 1
+train:
+  mixing_augs:
+    mixup: true
+    mixup_beta: 1.2
+    use_identity: true
+  optim_g:
+    betas:
+    - 0.9
+    - 0.999
+    lr: 0.0003
+    type: AdamW
+    weight_decay: 0.0001
+  pixel_opt:
+    loss_weight: 1
+    reduction: mean
+    type: L1Loss
+  scheduler:
+    eta_mins:
+    - 0.0003
+    - 1.0e-06
+    periods:
+    - 92000
+    - 208000
+    restart_weights:
+    - 1
+    - 1
+    type: CosineAnnealingRestartCyclicLR
+  total_iter: 300000
+  use_grad_clip: true
+  warmup_iter: -1
+val:
+  max_minibatch: 8
+  metrics:
+    psnr:
+      crop_border: 0
+      test_y_channel: false
+      type: calculate_psnr
+  rgb2bgr: true
+  save_img: false
+  use_image: false
+  val_freq: 4000.0
+  window_size: 8
