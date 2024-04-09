@@ -59,15 +59,15 @@
 请通过以下方式联系我们：
 
 - 邮箱：TlomlZQ@gmail.com
-- GitHub仓库：https://github.com/pixelmagic
+- GitHub仓库：https://github.com/tlomlzq/Pixel-Magic
 
 ## 许可证
 
-该项目基于 [MIT 许可证](https://chat18.aichatos.xyz/LICENSE)，请查阅许可证文件获取更多信息。
+该项目基于 [MIT 许可证]([https://github.com/tlomlzq/Pixel-Magic/blob/master/README.md)，请查阅许可证文件获取更多信息。
 
 ------
 
 感谢您选择使用像素魔法！我们希望这个工具能够帮助您实现出色的图像处理效果，帮助您评估图像超分辨率模型。如有任何问题或建议，请随时与我们联系。祝您使用愉快！
 
-作者：[Your Name](https://github.com/yourname)
+作者：[tlomlzq](https://github.com/tlomlzq)
 
