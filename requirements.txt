@@ -57,7 +57,8 @@ natsort
 networkx
 numpy
 oauthlib
-opencv-python
+opencv_python_headless
+
 packaging
 pandas
 Pillow
