@@ -4,7 +4,6 @@ torchvision
 streamlit
 streamlit-lottie
 streamlit-option-menu
-
 absl-py
 addict
 altair
