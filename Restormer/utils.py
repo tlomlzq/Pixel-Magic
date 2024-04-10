@@ -46,6 +46,7 @@ def calculate_ssim(img1, img2, border=0):
     elif img1.ndim == 3:
         if img1.shape[2] == 3:
             ssims = []
+
             for i in range(3):
                 ssims.append(ssim(img1[:,:,i], img2[:,:,i]))
             return np.array(ssims).mean()
