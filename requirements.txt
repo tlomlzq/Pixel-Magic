@@ -8,7 +8,6 @@ absl-py
 addict
 altair
 attrs
-
 basicsr
 beautifulsoup4
 blinker
