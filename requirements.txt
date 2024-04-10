@@ -1,11 +1,15 @@
 torch>=1.7.0
 torchaudio
 torchvision
+streamlit
+streamlit-lottie
+streamlit-option-menu
+
 absl-py
 addict
 altair
 attrs
-backports.zoneinfo
+
 basicsr
 beautifulsoup4
 blinker
@@ -89,9 +93,7 @@ scipy>=1.4.1
 six
 smmap
 soupsieve
-streamlit
-streamlit-lottie
-streamlit-option-menu
+
 tb-nightly
 tbb
 tenacity
