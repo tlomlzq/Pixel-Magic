@@ -52,7 +52,7 @@ MarkupSafe
 matplotlib
 mdurl
 mkl
-mkl-fft
+
 mkl-random
 mkl-service
 natsort
