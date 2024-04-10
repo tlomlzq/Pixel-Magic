@@ -6,7 +6,7 @@ absl-py
 addict
 altair
 attrs
-backports.zoneinfo
+
 basicsr
 beautifulsoup4
 blinker
