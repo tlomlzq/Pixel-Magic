@@ -53,11 +53,15 @@ matplotlib
 mdurl
 mkl
 
+libsm6
+libxrender1
+libxext-dev
+
 natsort
 networkx
 numpy
 oauthlib
-opencv_python_headless
+opencv-python
 
 packaging
 pandas
