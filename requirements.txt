@@ -11,6 +11,7 @@ attrs
 basicsr
 beautifulsoup4
 blinker
+
 cachetools
 certifi
 charset-normalizer
